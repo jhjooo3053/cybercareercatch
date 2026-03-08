@@ -64,6 +64,10 @@
     text-align: center;
 }
 
+.rmq-hdr-subbox h5{
+    text-align: center;
+}
+
 /* main2 */
 
 .rmq-job {
@@ -162,6 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .rmq-pnl-frm {
@@ -274,6 +279,8 @@
     height: 30px;
     background-color: #7d84e6;
     color: white;
+    border-color: white;
+    border-radius: 5px;
 }
 
 /* 채용공고 버튼 */
@@ -288,8 +295,17 @@
     border-radius: 10px;
     background-color: white;
     margin-bottom: 50px;
+
 }
 
 #cnldjq h1 {
     color: #7d84e6;
+}
+
+.rmq-steplist {
+    display: none;
+}
+
+.rmq-steplist.active {
+    display: block;
 }
