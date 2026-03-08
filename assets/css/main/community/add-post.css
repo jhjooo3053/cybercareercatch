@@ -30,18 +30,18 @@ body {
 }
 
 .free-write-move-btn {
-  background: #2563eb;
+  background: #7d84e6;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 13px;
   text-decoration: none;
-  border: 1px solid #2563eb;
+  border: 1px solid #7d84e6;
 }
 
 .free-write-move-btn:hover {
-  background: #1d4ed8;
-  border: 1px solid #1d4ed8;
+  background: #7d84e6;
+  border: 1px solid #7d84e6;
 }
 
 .free-write-box {

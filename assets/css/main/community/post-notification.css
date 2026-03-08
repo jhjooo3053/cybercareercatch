@@ -30,7 +30,7 @@ body {
 }
 
 .notice-move-btn {
-  background: #8f96ff;
+  background:#7d84e6;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
@@ -39,7 +39,7 @@ body {
 }
 
 .notice-move-btn:hover {
-  background: #7b83f5;
+  background: #7d84e6;
 }
 
 .notice-box {
@@ -82,7 +82,7 @@ body {
 }
 
 .notice-btn {
-  background: #8f96ff;
+  background: #7d84e6;
   color: white;
   padding: 8px 14px;
   border-radius: 6px;
