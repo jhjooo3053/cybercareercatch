@@ -1,0 +1,243 @@
+/* 
+  Abbrev(축약어) 규칙
+  fbd = Free Board Detail (이 페이지 공통 prefix)
+  top = 상단 타이틀 영역
+  ttl = title
+  mv = move button
+  pnl = panel(전체 박스)
+  post = 게시글 영역
+  head = 게시글 상단 영역
+  info = 작성자/조회수/작성일 영역
+  act = 버튼 영역
+  cont = 내용 영역
+  edit = 수정 영역
+  cmt = 댓글 영역
+  row = 한 줄 영역
+  inp = input
+  ta = textarea
+  btn = button
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+.fbd-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 80px;
+}
+
+.fbd-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.fbd-top-ttl {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.fbd-top-mv {
+  background-color: #7d84e6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.fbd-pnl {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  background-color: white;
+  padding: 30px;
+}
+
+.fbd-post {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.fbd-head {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 16px;
+}
+
+.fbd-head-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.fbd-post-ttl {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.fbd-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.fbd-act {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fbd-act-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  color: white;
+  font-size: 13px;
+}
+
+.fbd-act-edit {
+  background-color: #7d84e6;
+}
+
+.fbd-act-del {
+  background-color:rgb(252, 126, 126);
+}
+
+.fbd-act-save {
+  background-color: #7d84e6;
+}
+
+.fbd-act-cancel {
+  background-color: #7d84e6;
+}
+
+.fbd-cont {
+  width: 100%;
+  min-height: 280px;
+  padding: 20px 0;
+  line-height: 1.7;
+}
+
+.fbd-edit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.fbd-edit-inp {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.fbd-edit-ta {
+  width: 100%;
+  height: 260px;
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  resize: none;
+  font-size: 14px;
+}
+
+.fbd-cmt {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+
+.fbd-cmt-list {
+  width: 100%;
+}
+
+.fbd-cmt-write {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.fbd-cmt-inp {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.fbd-cmt-btn {
+  width: 70px;
+  height: 42px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7d84e6;
+  color: white;
+  font-size: 13px;
+}
+
+
+.fd-comment-row,
+.fbd-cmt-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.fd-comment-left,
+.fbd-cmt-left {
+  width: 92%;
+}
+
+.fd-comment-meta,
+.fbd-cmt-meta {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 6px;
+}
+
+.fd-comment-text,
+.fbd-cmt-text {
+  font-size: 14px;
+  color: black;
+  line-height: 1.6;
+}
+
+.fd-comment-del,
+.fbd-cmt-del {
+  border: none;
+  background-color: white;
+  color: #7d84e6;
+  font-size: 13px;
+}

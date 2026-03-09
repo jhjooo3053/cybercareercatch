@@ -1,14 +1,13 @@
 /* 
   Abbrev(축약어) 규칙
-  fbw = Free Board Write (이 페이지 공통 prefix)
+  ntd = Notice Detail (이 페이지 공통 prefix)
   top = 상단 타이틀 영역
   ttl = title
   mv = move button
   pnl = panel(전체 박스)
-  row = 한 줄 영역
-  lbl = label
-  inp = input
-  ta = textarea
+  head = 상단 정보 영역
+  info = 작성자/날짜/조회수 영역
+  cont = 본문 영역
   btm = 하단 버튼 영역
   btn = 버튼
 */
@@ -25,13 +24,13 @@ body {
   font-size: 14px;
 }
 
-.fbw-wrap {
+.ntd-wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 50px 0 80px;
 }
 
-.fbw-top {
+.ntd-top {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,12 +38,12 @@ body {
   margin-bottom: 30px;
 }
 
-.fbw-top-ttl {
+.ntd-top-ttl {
   font-size: 28px;
   font-weight: 700;
 }
 
-.fbw-top-mv {
+.ntd-top-mv {
   background-color: #7d84e6;
   color: white;
   padding: 10px 16px;
@@ -53,7 +52,7 @@ body {
   font-size: 13px;
 }
 
-.fbw-pnl {
+.ntd-pnl {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 12px;
@@ -61,60 +60,50 @@ body {
   padding: 35px 30px 30px;
 }
 
-.fbw-row {
+.ntd-head {
   width: 100%;
-  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 18px;
+  margin-bottom: 20px;
 }
 
-.fbw-lbl {
-  display: block;
-  font-size: 16px;
+.ntd-head-ttl {
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
-.fbw-inp {
+.ntd-head-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #666666;
+}
+
+.ntd-cont {
   width: 100%;
-  height: 48px;
-  padding: 0 14px;
+  min-height: 340px;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  line-height: 1.7;
 }
 
-.fbw-inp:focus {
-  outline: none;
-  border: 1px solid #7d84e6;
-}
-
-.fbw-ta {
-  width: 100%;
-  height: 420px;
-  padding: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  resize: none;
-  font-size: 14px;
-}
-
-.fbw-ta:focus {
-  outline: none;
-  border: 1px solid #7d84e6;
-}
-
-.fbw-btm {
+.ntd-btm {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.fbw-btn {
+.ntd-btn {
   background-color: #7d84e6;
   color: white;
-  border: none;
+  padding: 8px 14px;
   border-radius: 6px;
-  padding: 10px 18px;
+  text-decoration: none;
   font-size: 13px;
 }

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: black;
+    background-color: white;
+}
+
+.qna-list-main {
+    width: 780px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.qna-list-top {
+    margin-bottom: 20px;
+}
+
+.qna-list-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.qna-list-tbl {
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 2px solid gray;
+}
+
+.qna-list-tbl th {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+}
+
+.qna-list-tbl td {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+.qna-list-tbl td a {
+    color: black;
+    text-decoration: none;
+}
+
+.qna-list-tbl td a:hover {
+    text-decoration: underline;
+}
+
+.qna-list-tbl-num {
+    width: 70px;
+}
+
+.qna-list-pg {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.qna-list-pg button {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+
+.qna-list-pg button:hover {
+    background-color: whitesmoke;
+}
+
+.qna-list-pg-active {
+    background-color: #7d84e6;
+    color: white;
+    border: 1px solid #7d84e6;
+}
+
+.qna-list-search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.qna-list-search-sel {
+    width: 80px;
+    height: 36px;
+    padding: 0 8px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+
+.qna-list-search-inp {
+    width: 220px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid gray;
+}
+
+.qna-list-search-btn {
+    width: 60px;
+    height: 36px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+
+.qna-list-search-btn:hover {
+    background-color: whitesmoke;
+}
+
+.qna-list-search-btn-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 36px;
+    border: 1px solid #7d84e6;
+    background-color: #7d84e6;
+    color: white;
+    text-decoration: none;
+}
+
+.qna-list-search-btn-write:hover {
+    background-color: #7d84e6;
+}
+
+.qna-list-head {
+    display: flex;
+    border-top: 2px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+}
+
+.qna-list-row {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.qna-list-col-num {
+    width: 80px;
+}
+
+.qna-list-col-title {
+    flex: 1;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.qna-list-col-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.qna-list-col-title a:hover {
+    text-decoration: underline;
+}
+
+.qna-list-col-writer {
+    width: 100px;
+}
+
+.qna-list-col-date {
+    width: 100px;
+}
